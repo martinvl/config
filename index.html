@@ -1,0 +1,56 @@
+<html>
+<head>
+<style>
+html, body
+{
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+
+    line-height: 100%;
+    vertical-align: middle;
+}
+
+body
+{
+    display: table;
+    position: absolute;
+    background-color: #333333;
+}
+
+.container
+{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+input
+{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #999999;
+    width: 530px;
+    padding: 20px;
+    border-radius: 5px;
+    border: 0px;
+
+    font-size: 24px;
+    font-family: arial;
+    cursor: default;
+
+    box-shadow:none;
+    outline: none;
+}
+</style>
+</head>
+<body>
+<div class="container">
+    <input type="text" id="copy" value='python -c "$(curl -fsSL melvon.com/config.py)"'></input>
+</div>
+<script>
+    document.getElementById('copy').select();
+</script>
+</body>
+</html>
