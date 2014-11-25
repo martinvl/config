@@ -2,7 +2,7 @@
 To start config run:
 
 ```bash
-curl melvon.com/config | python
+curl melvon.com/config/ | python
 ```
 
 Currently supports:
